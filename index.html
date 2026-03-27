@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍰 Honey & Flour | Bakery Menu</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="header-decoration">
+                <span class="deco-dot">✦</span>
+                <span class="deco-dot">✧</span>
+                <span class="deco-dot">✦</span>
+            </div>
+
+            <h1 class="bakery-name">Honey & Flour</h1>
+            <p class="tagline">artisanal baked goods • made with love</p>
+
+            <div class="header-decoration">
+                <span class="deco-dot">✧</span>
+                <span class="deco-dot">✦</span>
+                <span class="deco-dot">✧</span>
+            </div>
+        </header>
+
+        <!-- Category Tabs -->
+        <nav class="category-tabs">
+            <button class="tab-btn active" data-category="all">All Treats</button>
+            <button class="tab-btn" data-category="cakes">🍰 Cakes</button>
+            <button class="tab-btn" data-category="pastries">🥐 Pastries</button>
+            <button class="tab-btn" data-category="breads">🍞 Breads</button>
+            <button class="tab-btn" data-category="drinks">☕ Drinks</button>
+        </nav>
+
+        <!-- Menu -->
+        <main>
+            <div class="menu-grid" id="menuGrid"></div>
+        </main>
+
+        <!-- Cart Button -->
+        <button class="cart-toggle" id="cartToggle" aria-label="Open cart">
+            🛒
+            <span class="cart-count" id="cartCount">0</span>
+        </button>
+
+        <!-- Cart Sidebar -->
+        <aside class="cart-sidebar" id="cartSidebar">
+            <div class="cart-header">
+                <h3>Your Order 🧁</h3>
+                <button class="close-cart" id="closeCart">&times;</button>
+            </div>
+
+            <div class="cart-items" id="cartItems">
+                <p class="empty-cart-msg">
+                    Your cart is empty ✨<br>Add some sweetness!
+                </p>
+            </div>
+
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cartTotal">$0.00</span>
+                </div>
+                <button class="checkout-btn" id="checkoutBtn">
+                    Checkout 🎀
+                </button>
+            </div>
+        </aside>
+
+        <!-- Overlay -->
+        <div class="overlay" id="overlay"></div>
+
+        <!-- Toast -->
+        <div class="toast" id="toast">
+            ✨ Item added to cart!
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
